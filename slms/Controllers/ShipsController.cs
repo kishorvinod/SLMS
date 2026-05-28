@@ -1,23 +1,32 @@
 using Microsoft.AspNetCore.Mvc;
 using slms.Models;
+using slms.Data;
 
-namespace slmsAPI.Controllers;
+namespace slms.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
 public class ShipsController : ControllerBase
 {
-    private static List<Ship> ships = new List<Ship>();
+    private readonly AppDbContext _context;
+
+    public ShipsController(AppDbContext context)
+    {
+        _context = context;
+    }
+
+
     [HttpGet]
     public IActionResult GetShips()
     {
-        return Ok(ships);
+        return Ok(_context.Ships.ToList());
     }
 
     [HttpPost]
     public IActionResult AddShip(Ship ship)
     {
-        ships.Add(ship);
+        _context.Ships.Add(ship);
+        _context.SaveChanges();
         return Ok(ship);
     }
 }
