@@ -1,0 +1,88 @@
+# .NET / ASP.NET Core .gitignore
+
+## Build results
+
+bin/
+obj/
+out/
+
+## Visual Studio files
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Rider / VS Code
+
+.idea/
+.vscode/
+
+## Logs
+
+*.log
+
+## OS files
+
+.DS_Store
+Thumbs.db
+
+## Environment files
+
+.env
+
+## ASP.NET Core
+
+appsettings.Development.json
+
+## Publish output
+
+publish/
+
+## NuGet
+
+*.nupkg
+packages/
+.nuget/
+
+## Entity Framework migrations (optional)
+
+# Uncomment if you don't want migrations
+
+# Migrations/
+
+## SQLite database files (optional)
+
+*.db
+*.sqlite
+
+## IIS Express
+
+iisexpress/
+
+## Resharper
+
+_ReSharper*/
+*.DotSettings.user
+
+## Coverage reports
+
+coverage/
+*.coverage
+*.coveragexml
+
+## Temporary files
+
+*.tmp
+*.temp
+
+## Node (if frontend added later)
+
+node_modules/
+dist/
+build/
+
+## Mac/Linux hidden files
+
+.*.swp
