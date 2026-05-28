@@ -1,0 +1,6 @@
+@slms_HostAddress = http://localhost:5001
+
+GET {{slms_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
