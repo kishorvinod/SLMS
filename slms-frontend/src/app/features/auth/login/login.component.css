@@ -1,0 +1,22 @@
+.auth-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #eef5ff 0%, #f7f9fc 48%, #edf7f1 100%);
+}
+
+.auth-card {
+  width: min(100%, 420px);
+  border-radius: 8px;
+}
+
+.auth-form {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+button mat-spinner {
+  margin: 0 auto;
+}

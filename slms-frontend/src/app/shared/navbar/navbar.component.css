@@ -1,0 +1,22 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.role {
+  margin-right: 12px;
+  font-size: 14px;
+  opacity: 0.9;
+}
